@@ -26,17 +26,18 @@ endif()
 # add_library(common_properties INTERFACE)
 # target_compile_features(common_properties INTERFACE cxx_std_14)
 
-# Решение №1
-add_executable(solution_1 src/question_1/main.cpp)
-set_target_properties(solution_1 PROPERTIES
+# Решение
+add_executable(solution_cpp src/cpp/main.cpp)
+set_target_properties(solution_cpp PROPERTIES
   CXX_STANDARD 14
   CXX_STANDARD_REQUIRED YES
   CXX_EXTENSIONS NO
-  )
+)
 
-# Решение №2
-# add_executable(solution_2 src/question_2/main.c)
-
-# Решение №3
-# add_executable(solution_3 src/question_3/main.c)
-# add_executable(solution_3_test src/question_3/test.c)
+# Решение
+add_executable(solution_c src/c/main.c)
+# set_target_properties(solution_c PROPERTIES
+#   CXX_STANDARD 14
+#   CXX_STANDARD_REQUIRED YES
+#   CXX_EXTENSIONS NO
+# )
