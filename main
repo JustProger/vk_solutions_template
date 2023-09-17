@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# cmake -Bbuild/ . -DCMAKE_CXX_COMPILER=clang++ &&
+# cmake -Bbuild/ . -DCMAKE_CXX_COMPILER=g++ &&
+cmake -Bbuild/ . &&
+cmake --build build/
